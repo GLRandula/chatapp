@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { UserAuth } from '../context/AuthContext'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-  const { currentUser } = UserAuth();
+  const navigate = useNavigate();
+  const { currentUser, signinWithGoogle } = UserAuth();
   console.log(currentUser)
+
+  const handleLogin = async () => {
+    try {
+        await signinWithGoogle();
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    if(currentUser){
+        navigate("/chat");
+    }
+    else{
+      console.log("error");
+    }
+
+  }, [currentUser, navigate]);
 
   return (
     <div>
@@ -16,7 +36,7 @@ const Login = () => {
                 Join the conversation, meet new people, and make <br></br>
                 connections in one shared room.
               </p>
-              <button className="btn btn-primary">Login with Google</button>
+              <button onClick={handleLogin} className="btn btn-primary">Login with Google</button>
             </div>
           </div>
         </div>
