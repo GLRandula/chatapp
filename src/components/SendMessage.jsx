@@ -85,7 +85,7 @@ const SendMessage = () => {
   return (
     <div className="bg-base-100 fixed bottom-0 w-full py-10 shadow-lg">
       <form onSubmit={handleSendMessage} className="px-2 containerWrap flex">
-        <input value={value} onChange={e => setValue(e.target.value)} className="input w-full focus:outline-none bg-gray-300 rounded-r-none text-black" type="text" />
+        <input value={value} onChange={e => setValue(e.target.value)} placeholder="Type your message here..." className="input w-full focus:outline-none bg-gray-300 rounded-r-none text-black" type="text" />
         <button type="submit" className="w-auto bg-primary text-white rounded-r-lg px-5 text-sm">Send</button>
       </form>
     </div>
