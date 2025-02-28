@@ -9,7 +9,6 @@ A real-time multi-user chat application built using **Next.js/Vite**, **Tailwind
 -  **User Authentication** using Firebase Auth  
 -  **Modern UI** with Tailwind CSS  
 -  **Responsive Design**  
--  **Instant Message Notifications**  
 
 ## 🛠️ Tech Stack
 
