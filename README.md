@@ -1,11 +1,28 @@
-# ChatApp
-![alt text](image.png)
+# 🗨️ Multi-User Chat Application
 
-## React + Vite
+A real-time multi-user chat application built using **Next.js/Vite**, **Tailwind CSS**, and **Firebase**. This project enables users to send and receive messages instantly with authentication support.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+-  **Real-time Messaging** with Firebase Firestore  
+-  **Multi-user Support**  
+-  **User Authentication** using Firebase Auth  
+-  **Modern UI** with Tailwind CSS  
+-  **Responsive Design**  
+-  **Instant Message Notifications**  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, Vite, Tailwind CSS  
+- **Backend:** Firebase (Firestore, Authentication)  
+
+## 📸 Screenshots  
+
+![alt text](chatapp.png)
+
+## 🔧 Installation & Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/GLRandula/chatapp.git
+   cd chatapp
